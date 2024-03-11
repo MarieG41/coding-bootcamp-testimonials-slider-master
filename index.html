@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,29 +14,45 @@
 </head>
 <body>
   <div class="background-imgs">
-    <img src="images/pattern-quotes.svg" alt="background quote pattern">
-    <img src="images/pattern-curve.svg" alt="background curve pattern">
-    <img src="images/pattern-bg.svg" alt="background patterns">
+    <img class="quotes" src="images/pattern-quotes.svg" alt="background quote pattern">
+    <img class="curve" src="images/pattern-curve.svg" alt="background curve pattern">
+    <div class="pattern">
+      <img src="images/pattern-bg.svg" alt="background patterns">
+    </div>
   </div>
   <div class="testimonials">
-    <section class="testimonial-1">
-      <img src="images/image-tanya.jpg" alt="tanya's picture">
-      <h1>“ I’ve been interested in coding for a while but never taken the jump, until now. 
-      I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
-      excited about the future. ”</h1>
-      <div class="clients-1">
-        <h4>Tanya Sinclair</h4>
-        <p>UX Engineer</p>
+    <section class="testimonial-1 One">
+      <div class="testimonial-1-infos">
+        <h1>“ I’ve been interested in coding for a while but never taken the jump, until now. 
+        I couldn’t recommend this course enough. I’m now in the job of my dreams and so 
+        excited about the future. ”</h1>
+        <div class="clients-1">
+          <h4>Tanya Sinclair</h4>
+          <p>UX Engineer</p>
+        </div>
       </div>
+        <div class="testimonial-1-img">
+          <img src="images/image-tanya.jpg" alt="tanya's picture">
+        </div>
     </section>
-  <section class="testimonial-2">
-    <img src="images/image-john.jpg" alt="john's picture">
-      <h1>“ If you want to lay the best foundation possible I’d recommend taking this course. 
-      The depth the instructors go into is incredible. I now feel so confident about 
-      starting up as a professional developer. ”</h1>
-      <div class="clients-2">
-        <h4>John Tarkpor</h4>
-        <p>Junior Front-end Developer</p>
+
+    <div class="slider-btn">
+      <img class="prev" src="images/icon-prev.svg" alt="previously icon">
+      <img class="next" src="images/icon-next.svg" alt="next icon">
+    </div>
+
+    <section class="hidden testimonial-1 testimonial-2">
+      <div class="testimonial-1-infos two">
+        <h1>“ If you want to lay the best foundation possible I’d recommend taking this course. 
+        The depth the instructors go into is incredible. I now feel so confident about 
+        starting up as a professional developer. ”</h1>
+        <div class="clients-1">
+          <h4>John Tarkpor</h4>
+          <p>Junior Front-end Developer</p>
+        </div>
+      </div>
+      <div class="testimonial-1-img">
+        <img src="images/image-john.jpg" alt="john's picture">
       </div>
   </section>
 </div>

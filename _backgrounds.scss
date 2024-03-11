@@ -1,0 +1,20 @@
+.background-imgs {
+    position: fixed;
+    z-index: -1;
+    .quotes {
+        position: absolute;
+        margin-top: 205px;
+        margin-left: 310px;
+        width: 8%;
+    }
+    .curve {
+        position: fixed;
+        bottom: 0;
+    }
+    .pattern {
+        display: flex;
+        justify-content: center;
+        margin-left: 700px;
+        padding-top: 30px;
+    }
+}

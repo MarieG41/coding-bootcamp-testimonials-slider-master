@@ -6,4 +6,37 @@
 body {
     font-size: 32px;
     font-family: 'Inter', sans-serif;
+    color: var(--Dark-Blue);
+    font-weight: 300;
+    h1 {
+        line-height: 150%;
+    }
+
+    p {
+        color: var(--Grayish-Blue);
+        font-size: 17px;
+        font-weight: 500;
+    }
+    h4 {
+        font-size: 17px;
+        font-weight: 700;
+    }
+    .slider-btn {
+        position: fixed;
+        top: 620px;
+        z-index: 4;
+        margin-left: 870px;
+        background-color: white;
+        width: 70px;
+        border-radius: 30px;
+        display: flex;
+        justify-content: space-around;
+        padding: 15px;
+    }
+    .hidden {
+        display: none
+    }
 }
+
+@import 'backgrounds';
+@import 'testimonials';
