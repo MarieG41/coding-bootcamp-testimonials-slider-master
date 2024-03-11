@@ -1,3 +1,10 @@
+/**
+* SassQueries
+* Manage media-queries in Sass easily.
+*
+* @author     Samuel Marchal (zessx)
+* @version    0.3
+*/
 :root {
   --Dark-Blue: hsl(240, 38%, 20%);
   --Grayish-Blue: hsl(240, 18%, 77%);
@@ -11,6 +18,11 @@ body {
 }
 body h1 {
   line-height: 150%;
+}
+@media all and (max-width: 767px) {
+  body h1 {
+    font-size: 20px;
+  }
 }
 body p {
   color: var(--Grayish-Blue);
@@ -33,6 +45,12 @@ body .slider-btn {
   justify-content: space-around;
   padding: 15px;
 }
+@media all and (max-width: 767px) {
+  body .slider-btn {
+    margin-left: 146px;
+    top: 285px;
+  }
+}
 body .hidden {
   display: none;
 }
@@ -47,15 +65,35 @@ body .hidden {
   margin-left: 310px;
   width: 8%;
 }
+@media all and (max-width: 767px) {
+  .background-imgs .quotes {
+    margin-left: 125px;
+    margin-top: 355px;
+    width: 20%;
+  }
+}
 .background-imgs .curve {
   position: fixed;
   bottom: 0;
+}
+@media all and (max-width: 767px) {
+  .background-imgs .curve {
+    width: 70%;
+  }
 }
 .background-imgs .pattern {
   display: flex;
   justify-content: center;
   margin-left: 700px;
   padding-top: 30px;
+}
+@media all and (max-width: 767px) {
+  .background-imgs .pattern {
+    margin-left: 0;
+    padding-top: 20px;
+    width: 350px;
+    height: 325px;
+  }
 }
 
 .testimonial-1 {
@@ -64,12 +102,27 @@ body .hidden {
   z-index: 2;
   align-items: center;
 }
+@media all and (max-width: 767px) {
+  .testimonial-1 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
 .testimonial-1 .testimonial-1-infos {
   z-index: 3;
   padding-left: 125px;
   width: 650px;
   margin-left: 100px;
   margin-top: 200px;
+}
+@media all and (max-width: 767px) {
+  .testimonial-1 .testimonial-1-infos {
+    margin-left: 0;
+    margin-top: 0;
+    width: 350px;
+    padding: 30px;
+    text-align: center;
+  }
 }
 .testimonial-1 .clients-1 {
   margin-top: 50px;
@@ -78,12 +131,36 @@ body .hidden {
 .testimonial-1 .clients-1 h4 {
   padding-right: 7px;
 }
+@media all and (max-width: 767px) {
+  .testimonial-1 .clients-1 h4 {
+    padding-right: 0;
+    padding-bottom: 8px;
+  }
+}
+@media all and (max-width: 767px) {
+  .testimonial-1 .clients-1 {
+    display: block;
+    margin-top: 25px;
+  }
+}
 .testimonial-1 .testimonial-1-img {
   margin-top: 100px;
+}
+@media all and (max-width: 767px) {
+  .testimonial-1 .testimonial-1-img {
+    margin: 45px 0;
+    display: flex;
+    justify-content: center;
+  }
 }
 .testimonial-1 .testimonial-1-img img {
   -webkit-box-shadow: 0px 13px 34px -11px var(--Dark-Blue);
   box-shadow: 0px 13px 34px -11px var(--Dark-Blue);
+}
+@media all and (max-width: 767px) {
+  .testimonial-1 .testimonial-1-img img {
+    width: 70%;
+  }
 }
 
 .testimonial-2 {
@@ -92,6 +169,17 @@ body .hidden {
 }
 .testimonial-2 .two {
   width: 633px;
+}
+@media all and (max-width: 767px) {
+  .testimonial-2 .two {
+    width: 340px;
+  }
+}
+@media all and (max-width: 767px) {
+  .testimonial-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

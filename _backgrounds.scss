@@ -6,15 +6,29 @@
         margin-top: 205px;
         margin-left: 310px;
         width: 8%;
+        @include media($until: tablet) {
+            margin-left: 125px;
+            margin-top: 355px;
+            width: 20%;
+        }
     }
     .curve {
         position: fixed;
         bottom: 0;
+        @include media($until: tablet) {
+            width: 70%;
+        }
     }
     .pattern {
         display: flex;
         justify-content: center;
         margin-left: 700px;
         padding-top: 30px;
+        @include media($until: tablet) {
+            margin-left: 0;
+            padding-top: 20px;
+            width: 350px;
+            height: 325px;
+        }
     }
 }
